@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('name');
             $table->enum('size', ['', 'Groot', 'Middel', 'Klein'])->default('');
             $table->string('color');
-            $table->foreignId('user_id')->constrained()->onDelete('cascade');
-            $table->foreignId('kennel_id')->constrained()->onDelete('cascade');
+            $table->foreignId('user_id');
+            $table->foreignId('kennel_id');
             $table->timestamps();
         });
     }

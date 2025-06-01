@@ -11,6 +11,6 @@ class Kennel extends Model
 
     public function Dogs()
     {
-        return $this->hasMany(user::class, 'dog_id');
+        return $this->hasMany(Dog::class, 'dog_id');
     }
 }

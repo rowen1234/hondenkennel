@@ -15,6 +15,6 @@ class Dog extends Model
     }
     public function kennel()
     {
-        return $this->belongsTo(user::class, 'kennel');
+        return $this->belongsTo(Kennel::class, 'kennel_id');
     }
 }
