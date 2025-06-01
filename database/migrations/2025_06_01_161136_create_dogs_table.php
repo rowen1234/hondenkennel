@@ -16,7 +16,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->enum('size', ['', 'Groot', 'Middel', 'Klein'])->default('');
-            $table->string('color');
+            $table->string('colour');
             $table->foreignId('user_id');
             $table->foreignId('kennel_id');
             $table->timestamps();

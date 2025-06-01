@@ -19,8 +19,8 @@
 
                 @if (auth())
                     <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                        <x-nav-link :href="route('dog.index')">
-                            {{ __('dogs') }}
+                        <x-nav-link :href="route('dog.index')" :active="request()->routeIs('dog.index')">
+                            {{ __('dog') }}
                         </x-nav-link>
                     </div>
                 @endif
