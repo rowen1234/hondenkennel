@@ -20,6 +20,7 @@ return new class extends Migration
             $table->integer('capacity');
             $table->time('open_from');
             $table->time('open_until');
+            $table->foreignId('dog_id');
             $table->timestamps();
         });
     }
