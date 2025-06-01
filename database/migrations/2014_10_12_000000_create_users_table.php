@@ -18,6 +18,7 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->foreignId('dog_id');
+            $table->boolean('admin');
             $table->rememberToken();
             $table->timestamps();
         });
